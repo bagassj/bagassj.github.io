@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #152642;
+}
+*{
+	font-family: 'Open Sans';
+	color: #f1f2f6;
+}
+.text-orange{
+	color: #ffa500;
+}
+.bg-orange{
+	background-color: #ffa500;
+}
+.text-red{
+	color: red;
+}
+.bg-red{
+	background-color: red;
+}
+.text-purple{
+	color: purple;
+}
+.bg-purple{
+	background-color: purple;
+}
+h4{
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 20pt;
+}
+h6{
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 14pt;
+	color: rgba(241, 242, 246,0.25);
+}
+button{
+	color: #f1f2f6 !important;
+}
+.row{
+	width: 100%;
+	margin: 0;
+}
+.content-wrapper{
+	/*max-width: 1170px;*/
+	margin: 0 auto;
+}
+.burger-menu{
+	position: fixed;
+	font-size: 18pt;
+	background-color: #152642;
+	box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 1);
+	border-radius: 10px;
+	color: #f1f2f6;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.close{
+	position: fixed;
+	font-size: 18pt;
+	background-color: #152642;
+	box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 1);
+	border-radius: 10px;
+	color: #f1f2f6;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar{
+	position: fixed;
+	width: 300px;
+	height: 100vh;
+	background-color: #152642;
+	/*border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 5px 0 5px 0 rgba(8, 27, 51, 0.5);*/
+	float: left;
+	z-index: 1;
+}
+.sidebar .text-center{
+	margin-top: 18px
+}
+.sidebar .profile-img{
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.sidebar .profile-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 0.8);
+	object-fit: cover;
+}
+.sidebar .name-user{
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #f1f2f6;
+	font-size: 16pt;
+}
+/*.sidebar .status{
+	font-family: 'Open Sans';
+	color: #7f8c8d;
+	font-size: 12px;
+}*/
+.sidebar .navbar{
+	display: flex;
+	width: 100%;
+	height: 330px;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+.sidebar .navbar ul{
+	width: 100%;
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+.sidebar .navbar ul li{
+	height: 40px;
+	width: 100%;
+}
+.sidebar .navbar ul li a{
+	font-family: 'Open Sans';
+	color: rgba(241, 242, 246,0.3);
+	font-size: 12pt;
+}
+.sidebar .navbar ul li a:hover{
+	font-size: 20pt;
+	color: rgba(241, 242, 246,1);
+	text-decoration: none;
+}
+.sidebar .footer{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 12px;
+	width: 100%;
+	font-family: 'Open Sans';
+    text-align: center;
+    color: rgba(241, 242, 246,1);
+    
+}
+.fa-facebook:hover{
+	color: #007bff;
+}
+.fa-whatsapp:hover{
+	color: #28a745;
+}
+.fa-twitter:hover{
+	color: #17a2b8;
+}
+.fa-instagram:hover{
+	color: #dc3545;
+}
+.sidebar .footer small{
+	font-size: 8pt;
+    color: rgba(241, 242, 246,0.2);
+}
+.content{
+	width: calc(100% - 300px);
+  	float: right;
+  	background: #152642;
+  	color: #2f3542;
+  	margin: 0;
+}
+.container-fluid{
+	padding:0 !important;
+}
+.home-page{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
+.home-page h1{
+	font-weight: 800;
+	font-size: 28pt;
+}
+.home-page h3{
+	font-weight: 300;
+	font-size: 20pt;
+}
+.home-page .btn{
+	margin-top: 20px;
+	background-color: #152642;
+	width: 100px;
+	box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 1);
+	border-radius: 50px;
+	font-size: 12pt;
+}
+.about{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
+.about p{
+	margin-top: 20px;
+	color: rgba(241, 242, 246,0.8);
+	font-size: 10pt;
+}
+.about p strong{
+	font-size: 12pt;
+	color: rgba(241, 242, 246,1)
+}
+.gallery{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
+.gallery .row{
+	padding-left: 15px;
+}
+.gallery .col-12{
+	margin-bottom: 50px;
+	padding: 0;
+}
+.gallery .col-4{
+	padding: 1px;
+	height: 236.66px;
+}
+.gallery img{
+	width: 100%;
+	height: 234.66px;
+	object-fit: cover;
+}
+.skill{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
+.skill .progress{
+	height: 3px;
+	border-radius: 100px;
+}
+.portofolio{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
+.portofolio .col-12{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.portofolio .col-md-4{
+	margin-bottom: 20px;
+}
+
+/*Card*/
+
+.card{
+	width: 100%;
+	height: 207px;
+	background-color: rgb(21, 38, 66);
+}
+
+.card-image iframe{
+	object-fit: cover;
+	width: 100%;
+	height: 150px;
+}
+.card-body h5{
+	font-size: 16px !important;
+}
+@media only screen and (max-width: 768px) {
+  	.sidebar{
+		display: none;
+		width: 100%;
+	}
+	.content{
+		width: 100%;
+	  	float: none;
+	}
+	.home-page{
+		text-align: center;
+	}
+	.home-page h3{
+		font-size: 12pt;
+	}
+	.home-page h1{
+		font-size: 18pt;
+	}
+	.home-page, .about, .gallery, .skill{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.skill .col-3{
+		width: 100%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+		margin-top: 10px;
+	}
+	.burger-menu{
+		display: flex; 
+	}
+	.active{
+		transition: all .3s ease-in-out;
+		transform: translate(0%, 0px);
+		-webkit-transform: translate(0%, 0px);
+		-ms-transform: translate(0%, 0px);
+		display: block;
+	}
+	.close-active{
+		display: flex;
+		z-index: 2;
+	}
+	.sidebar .navbar ul li a:hover{
+	font-size: 12pt;
+	color: rgba(241, 242, 246,0.3);
+	text-decoration: none;
+}
+}

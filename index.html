@@ -28,7 +28,7 @@
 					<li class="my-1" id="closenav2"><a href="#about">About</a></li>
 					<li class="my-1" id="closenav3"><a href="#gallery">Gallery</a></li>
 					<li class="my-1" id="closenav4"><a href="#skill">Skills</a></li>
-					<li class="my-1"><a href="#portofolio">Portofolio</a></li>
+					<li class="my-1" id="closenav5"><a href="#portofolio">Portofolio</a></li>
 				</ul>
 			</nav>
 			<div class="footer px-1">
@@ -168,7 +168,7 @@
 						</div>
 					</div>
 				</section>
-				<section id="portofolio" class=" portofolio">
+				<section id="portofolio" class="portofolio">
 					<div class="row">
 						<div class="col-12">
 							<h6>Portofolio</h6>
@@ -198,6 +198,7 @@
 		let closenav2 = document.querySelector('#closenav2');
 		let closenav3 = document.querySelector('#closenav3');
 		let closenav4 = document.querySelector('#closenav4');
+		let closenav5 = document.querySelector('#closenav5');
 		let sidenav = document.querySelector('#sidenav');
 
 		// Burger click function
@@ -227,9 +228,14 @@
 			sidenav.classList.remove('active');
 			close.classList.remove('close-active');
 		});
+		closenav5.addEventListener('click', function () {
+			sidenav.classList.remove('active');
+			close.classList.remove('close-active');
+		});
 	</script>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
 </html>

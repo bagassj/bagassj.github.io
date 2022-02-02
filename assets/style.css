@@ -263,6 +263,9 @@ button{
 	padding-right: 80px;
 	min-height: 100vh;
 }
+.skill span{
+	font-weight: 500 !important;
+}
 .skill .progress{
 	height: 3px;
 	border-radius: 100px;
@@ -348,5 +351,11 @@ button{
 	font-size: 12pt;
 	color: rgba(241, 242, 246,0.3);
 	text-decoration: none;
-}
+	}
+	.gallery, #closenav3, .progress{
+		display: none;
+	}
+	.skill span{
+		font-size: 10pt;
+	}
 }

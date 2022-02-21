@@ -352,6 +352,7 @@ button{
   	.sidebar{
 		display: none;
 		width: 100%;
+		z-index: 2;
 	}
 	.content{
 		width: 100%;
@@ -390,7 +391,7 @@ button{
 	}
 	.close-active{
 		display: flex;
-		z-index: 2;
+		z-index: 4;
 	}
 	.sidebar .navbar ul li a:hover{
 	font-size: 12pt;	

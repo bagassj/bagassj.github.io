@@ -10,20 +10,6 @@ body{
 	font-weight: 400;
 	color: #322E2B;
 }
-h4{
-	font-family: 'Karla', sans-serif;
-	font-weight: 800;
-	font-size: 20pt;
-}
-h6{
-	font-family: 'Karla', sans-serif;
-	font-weight: 700;
-	font-size: 16pt;
-	color: #322E2B;
-}
-button{
-	color: #322E2B !important;
-}
 .row{
 	width: 100%;
 	margin: 0;
@@ -32,6 +18,9 @@ button{
 	/*max-width: 1170px;*/
 	margin: 0 auto;
 }
+
+/* BURGER ICON */
+
 .burger-menu{
 	position: fixed;
 	font-size: 18pt;
@@ -51,6 +40,9 @@ button{
 	align-items: center;
 	z-index: 1;
 }
+
+/* CLOSE ICON */
+
 .close{
 	position: fixed;
 	font-size: 18pt;
@@ -70,15 +62,14 @@ button{
 	align-items: center;
 	opacity: 1 !important;
 }
+
+/* SIDEBAR */
+
 .sidebar{
 	position: fixed;
 	width: 300px;
 	height: 100vh;
 	background-color: #f7f1e3;
-	/*border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	box-shadow: 5px 0 5px 0 rgba(8, 27, 51, 0.5);*/
-	/* border-right: 1px solid #050200; */
 	float: left;
 	z-index: 1;
 }
@@ -95,8 +86,6 @@ button{
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
-	/* border: 1px solid #050200; */
-	/* box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 0.8); */
 	object-fit: cover;
 }
 .sidebar .name-user{
@@ -105,12 +94,6 @@ button{
 	color: #322E2B;
 	font-size: 16pt;
 }
-/*.sidebar .status{
-	font-family: 'Inconsolata', monospace;
-	font-weight: 400;
-	color: #7f8c8d;
-	font-size: 12px;
-}*/
 .sidebar .navbar{
 	display: flex;
 	width: 100%;
@@ -167,6 +150,9 @@ button{
 	font-size: 8pt;
     color: #322E2B;
 }
+
+/* CONTENT */
+
 .content{
 	width: calc(100% - 300px);
   	float: right;
@@ -177,6 +163,21 @@ button{
 .container-fluid{
 	padding:0 !important;
 }
+section h4{
+	font-family: 'Karla', sans-serif;
+	font-weight: 800;
+	font-size: 20pt;
+}
+section h6{
+	font-family: 'Inconsolata', monospace;
+	/* font-family: 'Karla', sans-serif; */
+	font-weight: 400;
+	font-size: 16pt;
+	color: #322E2B;
+}
+
+/* HOMEPAGE SECT */
+
 .home-page{
 	width: 100%;
 	display: flex;
@@ -187,22 +188,27 @@ button{
 	min-height: 100vh;
 }
 .home-page h1{
+	font-family: 'Karla', sans-serif;
 	font-weight: 800;
 	font-size: 24pt;
 }
 .home-page h3{
+	font-family: 'Inconsolata', monospace;
 	font-weight: 400;
-	font-size: 18pt;
+	font-size: 16pt;
 }
 .home-page .btn{
 	margin-top: 20px;
 	background-color: #F9F7AD;
 	width: 150px;
-	/* box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 1); */
 	border-radius: 0px;
 	border: 1px solid #050200;
+	color: #322E2B !important;
 	font-size: 12pt;
 }
+
+/* ABOUT SECT */
+
 .about{
 	width: 100%;
 	display: flex;
@@ -221,15 +227,9 @@ button{
 	font-size: 12pt;
 	color: #322E2B;
 }
-.experience{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 80px;
-	padding-right: 80px;
-	min-height: 100vh;
-}
+
+/* SKILL SECT */
+
 .skill{
 	width: 100%;
 	display: flex;
@@ -251,6 +251,17 @@ button{
 	background-color: #F9F7AD;
 }
 
+/* EXPERIENCE SECT */
+
+.experience{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 100vh;
+}
 .resume-box ul {
 	margin: 0;
 	padding: 30px 20px;
@@ -315,6 +326,8 @@ button{
 	margin: 0;
 }
 
+/* PORTOFOLIO SECT */
+
 .portofolio{
 	width: 100%;
 	display: flex;
@@ -331,9 +344,6 @@ button{
 .portofolio .col-md-4{
 	margin-bottom: 20px;
 }
-
-/*Card*/
-
 .card{
 	width: 100%;
 	height: 230px;
@@ -344,10 +354,13 @@ button{
 	height: 100%;
 }
 .card-image iframe{
-	/* object-fit: cover; */
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
+
+/* MOBILE RESPONSIVE */
+
 @media only screen and (max-width: 768px) {
   	.sidebar{
 		display: none;

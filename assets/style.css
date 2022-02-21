@@ -188,16 +188,16 @@ button{
 }
 .home-page h1{
 	font-weight: 800;
-	font-size: 28pt;
+	font-size: 24pt;
 }
 .home-page h3{
 	font-weight: 400;
-	font-size: 20pt;
+	font-size: 18pt;
 }
 .home-page .btn{
 	margin-top: 20px;
 	background-color: #F9F7AD;
-	width: 200px;
+	width: 150px;
 	/* box-shadow: -6px -6px 10px rgba(47, 69, 98, 0.8), 6px 6px 10px rgba(8, 27, 51, 1); */
 	border-radius: 0px;
 	border: 1px solid #050200;
@@ -221,7 +221,7 @@ button{
 	font-size: 12pt;
 	color: #322E2B;
 }
-.gallery{
+.experience{
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -229,22 +229,6 @@ button{
 	padding-left: 80px;
 	padding-right: 80px;
 	min-height: 100vh;
-}
-.gallery .row{
-	padding-left: 15px;
-}
-.gallery .col-12{
-	margin-bottom: 50px;
-	padding: 0;
-}
-.gallery .col-4{
-	padding: 1px;
-	/* height: 236.66px; */
-}
-.gallery img{
-	width: 100%;
-	height: 234.66px;
-	object-fit: cover;
 }
 .skill{
 	width: 100%;
@@ -266,6 +250,71 @@ button{
 	border: 1px solid #050200;
 	background-color: #F9F7AD;
 }
+
+.resume-box ul {
+	margin: 0;
+	padding: 30px 20px;
+	list-style: none;
+}
+.resume-box li {
+	position: relative;
+	padding: 0 20px 0 60px;
+	margin: 0 0 30px;
+}
+.resume-box li:last-child {
+	margin-bottom: 0;
+}
+.resume-box li:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	border-left: 1px dashed #050200;
+	bottom: -30px;
+}
+.resume-box li:last-child:after{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	border-left: 0px dashed #050200;
+	bottom: 0px;
+}
+.resume-box .icon {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #322E2B;
+	line-height: 40px;
+	background: #f7f1e3;
+	text-align: center;
+	z-index: 1;
+	border: 1px dashed;
+	border-radius: 50%;
+}
+.resume-box .time {
+	background: #F9F7AD;
+	border: 1px solid #050200;
+	color: #322E2B;
+	font-size: 10px;
+	padding: 2px 10px;
+	display: inline-block;
+	margin-bottom: 12px;
+	border-radius: 20px;
+	font-weight: 600;
+}
+.resume-box h5 {
+	font-weight: 700;
+	color: #322E2B;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.resume-box p {
+	margin: 0;
+}
+
 .portofolio{
 	width: 100%;
 	display: flex;
@@ -317,7 +366,7 @@ button{
 	.home-page h1{
 		font-size: 18pt;
 	}
-	.home-page, .about, .gallery, .skill, .portofolio{
+	.home-page, .about, .experience, .skill, .portofolio{
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -345,7 +394,7 @@ button{
 	font-size: 12pt;	
 	text-decoration: none;
 	}
-	.gallery, #closenav3, .progress{
+	.progress{
 		display: none;
 	}
 	.skill span{

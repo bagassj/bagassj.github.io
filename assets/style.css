@@ -113,15 +113,33 @@ body{
 	width: 100%;
 }
 .sidebar .navbar ul li a{
+	position: relative;
 	font-family: 'Karla', sans-serif;
 	font-weight: 700;
 	color: #322E2B;
 	font-size: 12pt;
 }
+.sidebar .navbar ul li a::before {  
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+.sidebar .navbar ul li a:hover::before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
 .sidebar .navbar ul li a:hover{
-	font-size: 20pt;
-	color: #322E2B;
+	color: #F9F7AD;
 	text-decoration: none;
+}
+.sidebar .navbar ul li a::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: #322E2B;
+	z-index: -1;
+	transition: transform .4s ease;
 }
 .sidebar .footer{
 	position: absolute;
@@ -309,15 +327,17 @@ section h6{
 	background: #F9F7AD;
 	border: 1px solid #050200;
 	color: #322E2B;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
 	font-size: 10px;
 	padding: 2px 10px;
 	display: inline-block;
 	margin-bottom: 12px;
 	border-radius: 20px;
-	font-weight: 600;
 }
 .resume-box h5 {
-	font-weight: 700;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 400;
 	color: #322E2B;
 	font-size: 16px;
 	margin-bottom: 10px;

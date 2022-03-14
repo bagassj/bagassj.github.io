@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Karla:wght@600;700;800&display=swap');
+.whatsapp{
+	background-color: #4FCE5D !important;
+	color: white !important;
+}
+.whatsapp i{
+	color: white !important;
+}
 html{
 	scroll-behavior: smooth;
 }
@@ -221,7 +228,7 @@ section h6{
 	width: 150px;
 	border-radius: 0px;
 	border: 1px solid #050200;
-	color: #322E2B !important;
+	color: #322E2B;
 	font-size: 12pt;
 }
 
@@ -435,5 +442,9 @@ section h6{
 	}
 	.skill span{
 		font-size: 10pt;
+	}
+	.btn{
+		margin-top: 4px !important;
+		margin-bottom: 4px !important;
 	}
 }

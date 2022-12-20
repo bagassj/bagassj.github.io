@@ -3,7 +3,30 @@
 	background-color: #4FCE5D !important;
 	color: white !important;
 }
-.whatsapp i{
+.whatsapp i {
+	color: white !important;
+}
+.instagram{
+	background: #d6249f;
+  	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: white !important;
+}
+.instagram i {
+	color: white !important;
+}
+.tiktok{
+	background-color: #000000 !important;
+	color: white !important;
+}
+.tiktok i {
+	color: white !important;
+}
+.ngl{
+	background: rgb(245,0,169);
+	background: linear-gradient(138deg, rgba(245,0,169,1) 0%, rgba(230,84,0,1) 44%, rgba(232,255,0,1) 98%);
+	color: white !important;
+}
+.ngl i {
 	color: white !important;
 }
 html{
@@ -415,9 +438,13 @@ section h6{
 	}
 	.skill .skill-card{
 		width: 100%;
-		flex: 0 0 33.333333%;
-		max-width: 33.333333%;
 		margin-top: 10px;
+	}
+	.skill .skill-card i{
+		font-size: 20px;
+	}
+	.skill .skill-card span{
+		display: none;
 	}
 	.burger-menu{
 		display: flex; 
